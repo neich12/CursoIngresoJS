@@ -5,18 +5,19 @@ en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
     var numerosueldo;
-    var numeroresultado;
     var aumento;
-    var resultado;
+    var numeroresultado;
+    var resto;
 
     numerosueldo = document.getElementById("sueldo").value;
     numerosueldo = parseInt(numerosueldo);
-    numeroresultado = document.getElementById("resultado").value;
-    numeroresultado = parseInt(numeroresultado);
+    var numeroresultado = document.getElementById("resultado").value;
+    var numeroresultado = parseInt(numeroresultado);
+    //alert("lasumaes: " +numerosueldo) EJEMPLO DE ALERT
 
-    var aumento = 0.10%
-    var resultado = (numerosueldo + aumento);
-
+    var resto = (aumento = 10%)
+    var resultado = (numerosueldo * aumento);
+  
 
 
 	
