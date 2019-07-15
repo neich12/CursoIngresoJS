@@ -7,4 +7,7 @@ function mostrar()
 	//alert(Math.random());
 	alert( Math.floor((Math.random() * 10) + 1));
 
+	
+
+
 }//FIN DE LA FUNCIÓN

@@ -12,7 +12,8 @@ function mostrar()
 {
     alert("Es soltero y no es menor");
 }    
-}    
+}    //if (edad<18 && estadocivil == "Soltero") OTRA FORMA DE HACERLO CON EL OPERADOR Y "&&")
+    // El signo ! es la negacion "NO"//
 
 
 
