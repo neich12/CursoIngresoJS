@@ -6,17 +6,17 @@ function mostrar()
     
     
     sistemaSolar = prompt("Ingrese un planeta");
-
+    
     switch(sistemaSolar) {
     
         case "mercurio":
         case "venus":
-        mensaje ="Aca hace mas calor";
+        {mensaje ="Aca hace mas calor"};
         break;
         
         
         case "tierra":
-        mensaje="Aca vivimos";
+        {mensaje="Aca vivimos"};
         break; 
         
         
@@ -26,13 +26,14 @@ function mostrar()
         case "urano":
         case "neptuno":
         case "pluton":
-        mensaje="Aca hace mas frio";
+        {mensaje="Aca hace mas frio"};
           
         
         default:
+        {mensaje="No es un planeta"}
     
         
     }
-        {alert (mensaje ="");}
+        {alert (mensaje=mensaje);}
 
 }
