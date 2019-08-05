@@ -12,7 +12,7 @@ function mostrar()
     ancho = prompt("Ingrese el ancho del rectangulo");
     largo = prompt("Ingrese el largo del rectangulo");
 
-    perimetro = (ancho * largo);
+    perimetro = ((ancho*2)+(largo*2));
     alert("La medida del rectangulo es: " +perimetro );
 
 
