@@ -1,120 +1,70 @@
-function mostrar()
-{
+function mostrar(){
+
     var letra;
-    var numero; 
+    var numero;
     var seguir;
-    var contador = 0; 
-    var acumuladorPositivos = 0;
-    var contadorPositivos = 0; 
-    var acumNeg = 0; 
-    var mayor
-    var menor;
-    var letraMayor;
-    var letraMenor;
-    var flag= 0;
-    var contadorPares = 0 ;
-    var contadorImpares = 0 ;  
-    var contadorCeros = 0;
-    var promedio = 0; 
-    var acumPos = 0;
-
-    do{ 
-        numero = parseInt(prompt ("Ingrese un numero entre -100 y 100"));
-        
-        while(!(numero >= -100 && numero <= 100 )){
-            numero = prompt("Ingrese un numero correcto")}
-
-
-        letra = prompt("Ingrese una letra");
-
-        while(!(isNaN(letra))){
-            letra= prompt("Reingrese una letra correcta");
-        }   
-        seguir= prompt("Quiere ingresar otro numero/letra ?");
-
-
-        acumuladorNotas = acumuladorNotas + numero;
-        numero = acumuladorNotas;
-        
-        if( numero % 2 == 0){
-
-            contadorPares++;
-    
-        }else {
-            contadorImpares++;}
-        if(numero > 0 ){
-                acumuladorPositivos = acumuladorPositivos + numero;
-                contadorPositivos++;}
-        else if(numero < 0){
-    
-            acumNeg= acumNeg +numero; 
-        } else {
-    
-            contadorCeros++;}
-    
-        if(numero > mayor || flag == 0){
-            mayor = numero;
-            letraMayor = letra;}
-    
-        if(numero < menor || flag == 0){
-            menor = numero;
-            letraMenor = letra; 
-            flag= 1;}
-
-
-    }while(seguir == "s"); // while(confirm)
-
-    if(contadorPositivos != 0){
-    promedio = acumPos/ contadorPositivos;}
-    
-    document.write("a La cantidad de numeros pares: " +contPares + "<br>");
-    document.write("a La cantidad de numeros impares: " + contadorImpares + "<br>");
-    document.write("a La cantidad de ceros: " +contadorCeros + "<br>");
-    document.write("El promedio es: " +promedio+ "<br>");
-    document.write("a La cantidad de numeros negativos es:  " +acumNeg + "<br>");
-    document.write("El numero mayor es: " +mayor+ "La letra mayor es: " +letraMayor + "<br>");
-
-
-    }
-/*
-    if(numero < numerosNegativos )
-
-
-    if(numero % 2 == 1){
-        alert("Los numeros impares son: " +numero); 
-    } 
-   */
-/*
-    if(numero == numeroMinimo){
-        numeroMinimo= numero;
-        letraMinima = letra;
-    }
-    alert("La nota Minima es: " + numeroMinimo + "La letra minima es: " +letraMinima);
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*USO DEL CONFIRM
-{
+    var par = 0;
+    var impar = 0;
+    var acumNumero = 0;
+    var contadorNumero = 0;
+    var ceros = 0;
+    var positivos = 0;
+    var negativos = 0;
+    var promedio = 0;
+    var letraMaxima = 0;
+    var letraMinima = 0 ;
+    var numeroMaximo = 0 ; 
+    var numeroMinimo = 0; 
+    var flag = 0;
 
     do{
+        letra = prompt("Ingrese una letra");
         
-        alert("Hola que tal");  
+        numero = parseInt(prompt("Ingrese un numero entre -100 y 100"));
 
-    }while(confirm("quiere que lo salude de nuevo?"));
+        if(isNaN(numero) || numero < -100 || numero > 100 ){
+            numero = parseInt(prompt("Error, reingrese un numero correcto"));}
 
+        seguir = prompt("Desea continuar? si/no")
+        
+        acumNumero = acumNumero + numero;
+
+        if(numero % 2 == 0){
+            par++;
+            promedio++;
+        } else {
+            if(numero % 2 == 1){
+                impar++; }
+        }
+
+        if(numero > 0){
+            positivos++;
+        }
+
+        if(numero < 0){
+            negativos++;} else{
+                ceros++;
+            }
+        
+        if(numero < numeroMinimo || flag == 0){
+            numeroMinimo = numero;
+            letraMinima = letra;
+        }
+        if(numero > numeroMaximo || flag == 0){
+            numeroMaximo = numero;
+            letraMaxima = letra;
+            flag = 1;
+        }
+        
+
+    }while(seguir == "si")
+
+
+
+    document.write(" La cantidad de numeros pares es: " +par+ "<br>" + "La cantidad de numeros impares es: " +impar+ "<br>");
+    document.write("La cantidad de numeros positivos es; " + positivos+ "<br>" + "La cantidad de negativos es: " +negativos+ "<br>");
+    document.write("La cantidad de ceros es: " +ceros + "<br>" + "El promedio de los numeros positivos es: " +promedio+ "<br>");
+    document.write("Numero Maximo: " +numeroMaximo+ "<br>" + "Letra Maxima: " +letraMaxima + "<br>");
+    document.write("Numero minimo: " + numeroMinimo+ "<br>" + "Letra minima: " +letraMinima + "<br>");
 
 }
-*/
