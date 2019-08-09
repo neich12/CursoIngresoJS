@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Curso Ingreso UTN FRA</title>
+
+			<!--/estilos-->
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" type="text/css" href="animacion.css">
+		<!--final de /estilos-->
+
+		<!--Lógica-Programación-->
+		<script type="text/javascript" src="dos.js"></script>
+        <!--Final de Lógica-Programación -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+
+<div class=" animated bounceInRight header">
+     <a  class="MiBotonUTNnav" onclick="location.href='index.html'" ><i class="far fa-hand-point-left"></i>Men&uacute; ejercicios</a> 	
+</div>
+
+<div class="row">
+  <div class="col-6 col-s-9">
+   	<form id="FormIngreso" class=" animated bounceInLeft">
+	   	<h1>Ingrese datos </h1>
+	   
+	   	<a  class="MiBotonUTNnav" onclick="mostrar()" >Mostrar  informaci&oacute;n</a>
+	 </form>
+  </div>
+
+  <div class="col-6 col-s-12">
+    <div class="aside animated bounceInUp">
+     <h2>Enunciado:</h2>
+				<h3>
+					Debemos realizar la carga de cuatro mascotas de una veterinaria, <br>
+					de cada una debo optener los siguientes datos: <br>
+					el tipo (validar "perro" o "gato") , <br>
+					la edad (validar entre 1 y 25),<br>
+					el peso (validar entre 1 y 100) <br>
+					y el nombre. <br>
+					Se debe Informar al usuario lo siguiente:
+					<br>
+			
+					a) El promedio de los pesos totales. <br>
+					b) El nombre del perro mas viejo <br>
+					c) La cantidad animales menores a 10 kilos de mas de 10 años.<br><br>
+			
+					<span style="font-size: 12px;" >Caso de prueba:<br>
+					1) Tipo: "tortuga" (mal), Tipo: "conejo" (mal), Tipo: "perro" (bien); 
+					Edad: 7; Peso: 40; Nombre: "Firulais". <br>
+					2) Tipo: "perro"; Edad: 26 (mal), Edad: 0 (mal), Edad: 15 (bien);
+					Peso: 20; Nombre: "Cachilo".  <br>
+					3) Tipo: "gato"; Edad: 20; Peso: 0 (mal), Peso: 101(mal), Peso: 8; 
+					Nombre: "Félix".<br>
+					4) Tipo: "perro"; Edad: 5; Peso: 5; Nombre: "Buddy".<br>
+					Resultado: <br>
+					- Promedio de los pesos: 18,25.<br>
+					- Nombre del perro más viejo: "Cachilo" (15 años).<br>
+					- Cantidad de animales menores a 10kg y más de 10 años: 1 (uno).   <br></span>
+				</h3>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  
+  	
+  	<p>Curso de ingreso UTN FRA</p>
+</div>
+
+</body>
+</html>
